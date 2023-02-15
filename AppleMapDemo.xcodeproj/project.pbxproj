@@ -11,6 +11,8 @@
 		EDA94F10298AB03300207359 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F0F298AB03300207359 /* ContentView.swift */; };
 		EDA94F12298AB03500207359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA94F11298AB03500207359 /* Assets.xcassets */; };
 		EDA94F15298AB03500207359 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA94F14298AB03500207359 /* Preview Assets.xcassets */; };
+		EDA94F1C299C09CB00207359 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F1B299C09CB00207359 /* LocationManager.swift */; };
+		EDA94F23299C13E800207359 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F22299C13E800207359 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EDA94F0F298AB03300207359 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDA94F11298AB03500207359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA94F14298AB03500207359 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDA94F1B299C09CB00207359 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EDA94F22299C13E800207359 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				EDA94F0D298AB03300207359 /* AppleMapDemoApp.swift */,
-				EDA94F0F298AB03300207359 /* ContentView.swift */,
+				EDA94F1F299C10B400207359 /* ViewModel */,
+				EDA94F1D299C109F00207359 /* View */,
 				EDA94F11298AB03500207359 /* Assets.xcassets */,
 				EDA94F13298AB03500207359 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				EDA94F14298AB03500207359 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDA94F1D299C109F00207359 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDA94F0F298AB03300207359 /* ContentView.swift */,
+				EDA94F22299C13E800207359 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDA94F1F299C10B400207359 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDA94F1B299C09CB00207359 /* LocationManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA94F23299C13E800207359 /* SearchView.swift in Sources */,
 				EDA94F10298AB03300207359 /* ContentView.swift in Sources */,
 				EDA94F0E298AB03300207359 /* AppleMapDemoApp.swift in Sources */,
+				EDA94F1C299C09CB00207359 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +294,7 @@
 				DEVELOPMENT_TEAM = 83L8TX8R2Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ApppleMapDemo app want to use your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,7 @@
 				DEVELOPMENT_TEAM = 83L8TX8R2Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ApppleMapDemo app want to use your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
