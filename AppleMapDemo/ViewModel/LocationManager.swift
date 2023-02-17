@@ -143,13 +143,3 @@ class LocationManager: NSObject, ObservableObject, MKMapViewDelegate, CLLocation
         return place
     }
 }
-
-
-
-
-
-
-
-
-
-
